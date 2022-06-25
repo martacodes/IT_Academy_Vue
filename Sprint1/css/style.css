@@ -1,0 +1,116 @@
+/*General*/
+
+body {
+    background: #fff;
+    max-width: 1200px;
+    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.basic {
+    background: #000;
+    margin: 10px 0px;
+    padding: 10px;
+}
+
+/*Header*/
+header {
+    background: #000;
+}
+
+nav ul {
+    display: flex;
+    background: #BCBCBC;
+    justify-content: space-evenly;
+}
+
+.element {
+    background: #F57263;
+    list-style: none;
+    margin: 10px;
+    text-align: center;
+}
+
+.num1 {
+    flex-grow: 1;
+}
+
+.num2 {
+    flex-grow: 4;
+}
+
+.num3 {
+    flex-grow: 1;
+}
+
+.header2 {
+    background: #F57263;
+    border: 10px solid #F5B563;
+}
+
+/*MAIN*/
+main {
+    background: #000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*main section*/
+section {
+    background: #BCBCBC;
+    flex-grow: 3;
+    display: grid;
+    grid-template-areas: 
+    "frase1 frase2"
+    "frase3 frase4"
+    "frase5 frase5";
+}
+
+/*anomenar grid*/
+.frase1 {
+    grid-area: frase1;
+}
+.frase2 {
+    grid-area: frase2;
+}
+.frase3 {
+    grid-area: frase3;
+}
+.frase4 {
+    grid-area: frase4;
+}
+.frase5 {
+    grid-area: frase5;
+    background: #60B4FF;
+    margin: 10px;
+}
+/*estil conjunt grid elements*/
+.column {
+    background: #006DCD;
+    margin: 10px;
+}
+
+/*main>aside*/
+aside {
+    background: #FF2626;
+    flex-grow: 1;
+    padding: 10px;
+    margin: 0px 0px 0px 10px;
+}
+
+aside>div {
+    background: #F5B563;
+    margin: 5px 0px;
+}
+
+/*FI MAIN*/
+
+/*FOOTER*/
+footer {
+    background: #000;
+}
+
+#footer {
+    background: #FFE4B5;
+}
