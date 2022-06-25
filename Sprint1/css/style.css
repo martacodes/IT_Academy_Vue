@@ -20,7 +20,7 @@ header {
 
 nav ul {
     display: flex;
-    background: #BCBCBC;
+    background: #676767;
     justify-content: space-evenly;
 }
 
@@ -44,7 +44,7 @@ nav ul {
 }
 
 .header2 {
-    background: #F57263;
+    background: #FFFF11;
     border: 10px solid #F5B563;
 }
 
@@ -58,33 +58,38 @@ main {
 
 /*main section*/
 section {
-    background: #BCBCBC;
+    background: #676767;
     flex-grow: 3;
     display: grid;
-    grid-template-areas: 
-    "frase1 frase2"
-    "frase3 frase4"
-    "frase5 frase5";
+    grid-template-areas:
+        "frase1 frase2"
+        "frase3 frase4"
+        "frase5 frase5";
 }
 
 /*anomenar grid*/
 .frase1 {
     grid-area: frase1;
 }
+
 .frase2 {
     grid-area: frase2;
 }
+
 .frase3 {
     grid-area: frase3;
 }
+
 .frase4 {
     grid-area: frase4;
 }
+
 .frase5 {
     grid-area: frase5;
     background: #60B4FF;
     margin: 10px;
 }
+
 /*estil conjunt grid elements*/
 .column {
     background: #006DCD;
@@ -100,7 +105,7 @@ aside {
 }
 
 aside>div {
-    background: #F5B563;
+    background: #FFFF11;
     margin: 5px 0px;
 }
 
@@ -113,4 +118,16 @@ footer {
 
 #footer {
     background: #FFE4B5;
+}
+
+/*media querys*/
+@media screen and (max-width:800px) {
+    main {
+        flex-direction: column;
+        background: #FFFE31 !important;
+    }
+
+    aside {
+        margin: 10px 0px 0px 0px;
+    }
 }
