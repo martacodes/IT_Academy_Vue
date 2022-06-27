@@ -32,15 +32,15 @@ nav ul {
 }
 
 .num1 {
-    flex-grow: 1;
+    flex: auto;
 }
 
 .num2 {
-    flex-grow: 4;
+    flex: 4 2 auto;
 }
 
 .num3 {
-    flex-grow: 1;
+    flex: auto;
 }
 
 .header2 {
@@ -63,7 +63,7 @@ main {
 /*main section*/
 section {
     background: #676767;
-    flex-grow: 3;
+    flex: 3 1 auto;
     display: grid;
     grid-template-areas:
         "frase1 frase2"
@@ -130,7 +130,7 @@ footer {
 
 /*media querys*/
 /* Tauleta */
-@media screen and (max-width:800px) {
+@media screen and (max-width:769px) {
     main {
         flex-direction: column;
         background: #FFFE31 !important;
@@ -138,5 +138,28 @@ footer {
 
     aside {
         margin: 10px 0px 0px 0px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    main {
+        flex-direction: column;
+        background: #FFFE31 !important;
+    }
+
+    .section {
+        grid-template: 
+        "frase1"
+        "frase2"
+        "frase3"
+        "frase4"
+        "frase5";
+    }
+    aside {
+        background:#F5B563;
     }
 }
