@@ -1,0 +1,15 @@
+// Variable overrides first
+
+// THEME COLOURS
+$primary: #5265E1;
+$secondary: #FA5959;
+
+#square {
+    z-index: 0;
+}
+
+#computerimg {
+    z-index: 1;
+}
+//import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
