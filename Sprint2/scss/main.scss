@@ -1,15 +1,56 @@
 // Variable overrides first
 
 // THEME COLOURS
-$primary: #5265E1;
-$secondary: #FA5959;
+$primary: #5265e1;
+$secondary: #fa5959;
 
+// BASICS
+h1,
+h2 {
+  font-family: Arimo, sans-serif;
+}
+
+.blue-form-right {
+	position: absolute;
+	z-index: -1;
+	width: 400%;
+	height: 75%;
+	top: 30%;
+	left: 30%;
+}
+
+.blue-form-left {
+	position: absolute;
+	z-index: -1;
+	width: 400%;
+	height: 95%;
+	top: 25%;
+	right: 25%;
+}
+// TABS
+.custom-tab {
+    border: 0;
+    margin: 0.75em;
+    color: #000;
+
+    &:hover,
+    &:active {
+      border-bottom: 3px solid $secondary;
+      box-sizing: border-box;
+
+      .nav-link {
+        border: 0px solid transparent;
+      }
+    }
+  }
+
+// SHAPE
 #square {
-    z-index: 0;
+  z-index: 0;
 }
 
 #computerimg {
-    z-index: 1;
+  z-index: 1;
 }
 //import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";

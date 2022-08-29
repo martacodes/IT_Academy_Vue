@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@700&family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap');
+    </style>
+    <link rel="stylesheet" href="../scss/main.css" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="container">
+        <nav class="navbar navbar-expand-md mt-4 mx-md-4">
+            <a href="./index.html" alt="bookmark home page"> <img class="navbar-brand" src="/img/logo-bookmark.svg"
+                    alt="logo bookmark"> </a>
+            <!-- Links -->
+            <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon ms-auto"></span>
+            </button>
+            <div id="menu" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto nav-pills">
+                    <li class="nav-item px-md-4"><a class="nav-link active" href="./features.html">FEATURING</a></li>
+                    <li class="nav-item px-md-4"><a class="nav-link" href="#">PRICES</a></li>
+                    <li class="nav-item px-md-4"><a class="nav-link" href="#">CONTACT</a></li>
+                    <button class="nav-item px-md-4 btn btn-secondary"><a class="nav-link text-light"
+                            href="#">LOGIN</a></button>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--END NAVBAR-->
+    <main>
+        <div class="container">
+            <div class="row m-6 col-lg-5 offset-lg-3 text-center">
+                <h1 class="font-weight-bold">Features</h1>
+                <p class="mt-4 text-muted ">Our aim is to make it quick and easy for you to acces your favourite
+                    websites. Your bookmarks sync
+                    between your devices so you can acces them on the go.</p>
+            </div>
+            <!--tab bar nova-->
+
+            <nav id="tab" class="row col-lg-5 offset-lg-3 mb-4">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#bookmark"
+                        type="button" role="tab" aria-controls="nav-bookmark" aria-selected="true">Simple
+                        Bookmarking</button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#search"
+                        type="button" role="tab" aria-controls="nav-search" aria-selected="false">Simply
+                        Searching</button>
+                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#share"
+                        type="button" role="tab" aria-controls="nav-share" aria-selected="false">Easy Sharing</button>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="bookmark" role="tabpanel" aria-labelledby="nav-bookmark-tab">
+                    Ara estic a bookmark
+                </div>
+                <div class="tab-pane fade" id="search" role="tabpanel" aria-labelledby="nav-search-tab">Search</div>
+                <div class="tab-pane fade" id="share" role="tabpanel" aria-labelledby="nav-share-tab">Share</div>
+            </div>
+            <!--end tab bar nova-->
+
+            <!--tab bar-->
+            <nav id="tab" class="row col-lg-5 offset-lg-3 mb-4">
+                <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="bookmarking" data-bs-toggle="tab" data-bs-target="#bookmarking"
+                        type="button" role="tab" aria-controls="nav-home" aria-selected="true">Simple
+                        Bookmarking</button>
+                    <button class="nav-link" id="bookmarking" data-bs-toggle="tab" data-bs-target="#searching"
+                        type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Simply
+                        Searching</button>
+                    <button class="nav-link" id="sharing" data-bs-toggle="tab" data-bs-target="#sharing" type="button"
+                        role="tab" aria-controls="nav-item" aria-selected="false">Easy Sharing</button>
+                </div>
+            </nav>
+            <!--Tab content 1. BOOKMARK-->
+            <div class="tab-content" id="tab">
+                <div class="tab-pane fade show active" id="bookmarking" role="tabpanel" aria-labelledby="bookmarking">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 overflow-hidden position-relative top-50 h-100 py-4 px-lg-5">
+                            <div class=""><img id="computerimg" class="img-fluid position-relative offset-1"
+                                    src="/img/illustration-features-tab-2.svg" alt="computer ilustration" /></div>
+                            <div id="square" class="bg-primary rounded-pill w-100 h-50 position-absolute top-50 end-50">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 py-4 ps-5 px-lg-5">
+                            <h2 class="my-3">Bookmark in one click</h2>
+                            <p class="text-muted mb-3">Organize your bookmarks however you like. Our simple
+                                dra-and-drop
+                                interface gives you
+                                complete
+                                control over how you manage your favourite sites.</p>
+                            <button class="btn btn-primary">More info</button>
+                        </div>
+                    </div>
+                </div>
+                <!--end tab content 1. BOOKMARK-->
+                <!--tab content 2. SEARCHING-->
+                <div class="tab-pane fade" id="searching" role="tabpanel" aria-labelledby="searching">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 overflow-hidden position-relative top-50 h-100 py-4 px-lg-5">
+                            <div class=""><img id="computerimg" class="img-fluid position-relative offset-1"
+                                    src="/img/illustration-features-tab-1.svg" alt="computer ilustration" /></div>
+                            <div id="square" class="bg-primary rounded-pill w-100 h-50 position-absolute top-50 end-50">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 py-4 ps-5 px-lg-5">
+                            <h2 class="my-3">Intelligent Search</h2>
+                            <p class="text-muted mb-3">Organize your bookmarks however you like. Our simple
+                                dra-and-drop
+                                interface gives you
+                                complete
+                                control over how you manage your favourite sites.</p>
+                            <button class="btn btn-primary">More info</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end content 2. SEARCHING-->
+                <!--tab content 3. SHARING-->
+                <div class="tab-pane fade" id="searching" role="tabpanel" aria-labelledby="sharing">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 overflow-hidden position-relative top-50 h-100 py-4 px-lg-5">
+                            <div class=""><img id="computerimg" class="img-fluid position-relative offset-1"
+                                    src="/img/illustration-features-tab-1.svg" alt="computer ilustration" /></div>
+                            <div id="square" class="bg-primary rounded-pill w-100 h-50 position-absolute top-50 end-50">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 py-4 ps-5 px-lg-5">
+                            <h2 class="my-3">SHARING--</h2>
+                            <p class="text-muted mb-3">Organize your bookmarks however you like. Our simple
+                                dra-and-drop
+                                interface gives you
+                                complete
+                                control over how you manage your favourite sites.</p>
+                            <button class="btn btn-primary">More info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end tab searching-->
+
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
